@@ -1,0 +1,13 @@
+.hero {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  @mixin atMedium {
+    max-height: 30rem;
+  }
+  @mixin atLarge {
+    grid-column: 2;
+    grid-row: span 2;
+    max-height: none;
+  }
+}

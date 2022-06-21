@@ -1,0 +1,79 @@
+.form {
+  position: relative;
+  &__input {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 2rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+    width: 100%;
+    background: hsl(0, 100%, 98%);
+    color: hsl(0, 6%, 24%);
+    &::placeholder {
+      color: hsl(0, 36%, 70%);
+    }
+    &--visible {
+      border: 1px solid hsl(0, 93%, 68%);
+    }
+    @mixin atXLarge {
+      height: 3.5rem;
+      font-size: 1rem;
+    }
+  }
+  &__erroricon {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 5rem;
+    @mixin atXLarge {
+      top: 1rem;
+      right: 7rem;
+    }
+    &--visible {
+      display: block;
+    }
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 4rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    &:active,
+    &:hover {
+      background: linear-gradient(135deg, hsl(0, 80%, 94%), hsl(0, 74%, 82%));
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    @mixin atXLarge {
+      height: 3.5rem;
+      width: 6rem;
+    }
+  }
+  &__arrow {
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    width: 0.9rem;
+    height: 0.9rem;
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 1rem;
+    right: 1.8rem;
+    @mixin atXLarge {
+      top: 1.25rem;
+      right: 2.7rem;
+    }
+  }
+  &__errortext {
+    display: none;
+    &--visible {
+      display: block;
+      font-size: 0.8rem;
+      color: hsl(0, 93%, 68%);
+      padding-left: 1.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+}

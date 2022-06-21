@@ -1,0 +1,8 @@
+.container {
+  margin-left: 2.15rem;
+  margin-right: 2.15rem;
+  @mixin atXLarge {
+    margin-left: min(11vw, 10rem);
+    margin-right: min(11vw, 10rem);
+  }
+}

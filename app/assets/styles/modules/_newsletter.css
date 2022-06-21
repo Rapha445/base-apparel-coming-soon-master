@@ -1,0 +1,42 @@
+.newsletter {
+  margin-bottom: 6rem;
+  @mixin atLarge {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 2.3rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    &--black {
+      color: hsl(0, 6%, 24%);
+      font-weight: 600;
+    }
+    @mixin atLarge {
+      margin-top: 0rem;
+    }
+    @mixin atXLarge {
+      margin-top: min(5vw, 4.5rem);
+      font-size: 3.7rem;
+      text-align: left;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+    text-align: center;
+    @mixin atXLarge {
+      font-size: 1rem;
+      text-align: left;
+      line-height: 1.5rem;
+    }
+  }
+  &__form {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <title>Base Apparel</title>
+</head>
+<header></header>
+<body>
+    <main class="grid">
+        <h1 class="title container">
+            <img src="./assets/images/logo.svg" alt="Base Apparel">
+        </h1>
+        <picture class="hero">
+            <source srcset="./assets/images/hero-desktop.jpg" media="(min-width: 376px)">
+            <img class="hero__img" src="./assets/images/hero-mobile.jpg" alt="Woman wearing an orange shirt">
+        </picture>
+        <div class="container newsletter">
+            <h2 class="newsletter__title">WE'RE <span class="newsletter__title--black">COMING SOON</span></h2>
+            <p class="newsletter__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form class="newsletter__form form" action="">
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email Address">
+                <img class="form__erroricon" src="./assets/images/icon-error.svg" alt="error icon">
+                <button class="form__button" type="submit">
+                    <div class="form__arrow"></div>
+                </button>
+                <p class="form__errortext">Please provide a valid email</p>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="./bundled.js"></script>
+</html>

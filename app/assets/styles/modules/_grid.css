@@ -1,0 +1,12 @@
+.grid {
+  @mixin atLarge {
+    display: grid;
+    grid-template-rows: 10rem auto;
+    grid-template-columns: 50% 50%;
+  }
+  @mixin atXXLarge {
+    display: grid;
+    grid-template-rows: 10rem auto;
+    grid-template-columns: 60% 40%;
+  }
+}
